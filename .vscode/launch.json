@@ -5,10 +5,14 @@
 	"version": "0.2.0",
 	"configurations": [
 		{
-			"command": "npm run prune && npm run scratch",
-			"name": "scratch",
+			"type": "node",
 			"request": "launch",
-			"type": "node-terminal"
+			"name": "go!!",
+			"runtimeExecutable": "nodemon",
+			"program": "${file}",
+			"restart": true,
+			"console": "integratedTerminal",
+			"internalConsoleOptions": "neverOpen"
 		},
 		{
 			"command": "npm run prune && npm run func",
